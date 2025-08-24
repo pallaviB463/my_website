@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuroraTours-travel with us</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#">AuroraTours</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="#packages">Packages</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#faq">FAQs</a>
+               </li>
+           
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+</body>
+
+<main>
+    <div class="modal" tabindex="-1" id="booking_model">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a Tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="email" id="email1" class="form-control" placeholder="Enter your email" required>
+                    <label for ="email1" class="form-label">Email</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select id="select1" class="form-select" required>
+                      <option value="" disabled selected>Select a Tour</option>
+                      <option value="tour1">Tromso, Norway-$899</option>
+                      <option value="tour2">Reykjavik, Iceland-$599</option>
+                      <option value="tour3">Yukon, canada-$799</option>
+                    </select>
+                    <label for ="select1" class="form-label">Pick a tour</label>
+                  </div>
+                </div>
+             </div>  
+               
+            </form>
+          </div>
+          <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+       <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+           <img src="https://media.istockphoto.com/id/904172104/photo/weve-made-it-all-this-way-i-am-proud.jpg?s=612x612&w=0&k=20&c=MewnsAhbeGRcMBN9_ZKhThmqPK6c8nCT8XYk5ZM_hdg=" class="d-block w-100 c-img" alt="img1">
+           <div class="carousel-caption top-0 mt-4 ">
+              <p class="fs-3 mt-5">Discover the hidden world</p>
+              <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+              <button type="button" class="btn btn-primary px-4 py-2" data-bs-toggle="modal"  data-bs-target="#booking_model" style="background-color: rgb(108, 182, 182);">Book a Tour</button>
+           </div>
+        </div>
+        <div class="carousel-item c-item">
+           <img src="https://media.istockphoto.com/id/2147497907/photo/young-woman-traveler-relaxing-and-enjoying-the-tropical-sea-while-traveling-for-summer.jpg?s=612x612&w=0&k=20&c=iY2aqFsXX9Hzq_KwAZhy3ug74z0y7KHxUc_msPHyKzU=" class="d-block w-100 c-img" alt="img2">
+           <div class="carousel-caption top-0 mt-4 ">
+              <p class="fs-3 mt-5">The season is arrived</p5>
+              <p  class="display-1 fw-bolder text-capitalize">3 available Tours</p>
+              <button type="button" class="btn btn-primary px-4 py-2" data-bs-toggle="modal"  data-bs-target="#booking_model">Book a Tour</button>
+              
+           </div>
+        </div>
+        <div class="carousel-item c-item">
+           <img src="https://media.istockphoto.com/id/1971796553/photo/young-couple-is-standing-at-mountain-top-with-great-view.jpg?s=612x612&w=0&k=20&c=SRfYHbtg53JPuRiM9LP5bD5_BKB-V4z4ttLbZoaygjc=" class="d-block w-100 c-img" alt="img3">
+           <div class="carousel-caption top-0 mt-4 ">
+              <p class="fs-3 mt-5">Destination activities</p>
+              <p  class="display-1 fw-bolder text-capitalize">Take a glacier hiking</p>
+              <button type="button" class="btn btn-primary px-4 py-2" data-bs-toggle="modal"  data-bs-target="#booking_model">Book a Tour</button>
+           </div>
+        </div>
+       </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="color:skyblue;">
+        <span class="carousel-control-prev-icon" ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="color:skyblue;">
+        <span class="carousel-control-next-icon" ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section class="overview d-flex align-items-center justify-content-center text-black text-center" >
+      <div class="col-xl">
+        <i class="bi bi-airplane-fill"></i>
+        3 amazing destinations
+      </div>
+      <div class="col-xl"> 
+        <i class="bi bi-wallet-fill"></i>
+        Only pay 5% up front
+      </div>
+      <div class="col-xl">
+        <i class="bi bi-people-fill"></i>
+        24/7 customer support
+      </div>
+    </section>
+    <section id="packages" class="pt-5">
+      <h2 class="text-center my-5">Packages</h2>
+      <div class="container">
+        <div class="row">
+        <div class="col-lg">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/904172104/photo/weve-made-it-all-this-way-i-am-proud.jpg?s=612x612&w=0&k=20&c=MewnsAhbeGRcMBN9_ZKhThmqPK6c8nCT8XYk5ZM_hdg="  class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking_model">Book Now</button>
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/2147497907/photo/young-woman-traveler-relaxing-and-enjoying-the-tropical-sea-while-traveling-for-summer.jpg?s=612x612&w=0&k=20&c=iY2aqFsXX9Hzq_KwAZhy3ug74z0y7KHxUc_msPHyKzU=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking_model">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/1971796553/photo/young-couple-is-standing-at-mountain-top-with-great-view.jpg?s=612x612&w=0&k=20&c=SRfYHbtg53JPuRiM9LP5bD5_BKB-V4z4ttLbZoaygjc=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking_model">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="faq" class="py-5">
+      <div class="container">
+        <h2 class="text-center my-5">FAQs</h2>
+      
+        <div class="faq-box p-4 border-dark rounded-3 shadow-sm">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+          </div>
+        </div>
+          <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      </div>
+        
+      </section>
+</main>
+</html>
